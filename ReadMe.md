@@ -6,6 +6,8 @@ How to run this:
 
 1.Create a PR
 
-2.Edit the main.tf
+2.edit the access_key and the secret_key in main.tf
 
-3.edit the access_key and the secret_key
+(optional) 3.edit bucket name in main.tf, in lines 7,8,14,18,22,26
+
+(optional) 4.edit the name of the pushed files in s3 in both run.sh, in lines 1,2,5,6 and in main.tf, in lines 15,16,23,24
