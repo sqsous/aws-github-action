@@ -12,7 +12,7 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 	// retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// Set the path to the Terraform code that will be tested.
-		TerraformDir: "/home/simaqsous/Local-Testing/aws/test2/examples",
+		TerraformDir: "./",
 	})
 
 	// Clean up resources with "terraform destroy" at the end of the test.
