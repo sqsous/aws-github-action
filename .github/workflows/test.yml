@@ -1,5 +1,5 @@
 on: pull_request
-name: My cool Action
+name: Github Action for Terratest
 jobs:
   build:
     runs-on: ubuntu-latest
