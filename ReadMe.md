@@ -22,7 +22,7 @@ How to run this locally:
 
 3.chmod +x run.sh, then ./run.sh
 
-4.install Go with the latest version
+4.install Go with the latest version 
 
 5.go mod init test
 
