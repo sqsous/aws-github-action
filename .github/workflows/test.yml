@@ -22,7 +22,6 @@ jobs:
         run: |
           go version
           go get -u github.com/gruntwork-io/terratest/modules/terraform
-          go get -u github.com/stretchr/testify/assert
       - name: Run testing
         run: go test -v
 
