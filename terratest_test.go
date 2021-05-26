@@ -30,4 +30,13 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 	url2 := fmt.Sprintf("http://%s:80/index2.html", publicIp2)
 	http_helper.HttpGetWithRetry(t, url2, nil, 200, "web-server-02", 30, 5*time.Second)
 	
+	//The two below may take few seconds before returning 200
+	publicIp3 := terraform.Output(t, terraformOptions, "aws-lb")
+	url3 := fmt.Sprintf("http://%s:80/index1.html", publicIp3)
+	http_helper.HttpGetWithRetry(t, url3, nil, 200, "web-server-01", 30, 5*time.Second)
+
+	publicIp4 := terraform.Output(t, terraformOptions, "aws-lb")
+	url4 := fmt.Sprintf("http://%s:80/index2.html", publicIp4)
+	http_helper.HttpGetWithRetry(t, url4, nil, 200, "web-server-02", 30, 5*time.Second)
+	
 }
