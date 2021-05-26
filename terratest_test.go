@@ -13,7 +13,7 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 	
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// Please enter the correct path in the command below
-		TerraformDir: "/home/simaqsous/Local-Testing/aws2",
+		TerraformDir: "./",
 	})
 
 	// Commented the below line, to make sure everything was created correctly 
